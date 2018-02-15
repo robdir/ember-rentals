@@ -18,8 +18,10 @@ moduleForComponent('rental-listing', 'Integration | Component | rental listing',
 
 test('it should display rental details', function(assert) {
   this.set('rentalObj', rental);
+  this.render(hbs`{{rental-listing rental=rentalObj}}`);
 });
 
 test('should toggle wide class on click', function(assert) {
   this.set('rentalObj', rental);
+  this.render(hbs`{{rental-listing rental=rentalObj}}`);
 })
